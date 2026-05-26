@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started with Web Development</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!--
+      File: index.html
+      GUI Assignment: HW1
+      Author: Preston Wilson, UMass Lowell Computer Science
+      Date Created: May 25, 2026
+      Description: This is the basic outline .html file that demonstrates my basic usage of web design.
+    -->
+
+    <header class="site-header">
+      <!-- This section introduces the web page and provides simple navigation. -->
+      <h1>Getting Started with Web Development</h1>
+      <p class="tagline">A basic student guide to HTML, CSS, JavaScript, and good project organization.</p>
+
+      <nav aria-label="Main navigation">
+        <a href="#overview">Overview</a>
+        <a href="#tools">Tools</a>
+        <a href="#resources">Resources</a>
+        <a href="#reflection">Reflection</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="overview" class="card">
+        <!-- This section explains the purpose of the page and gives informative reading content. -->
+        <h2>Why Web Development Matters</h2>
+        <p>
+          Web development is important because it is one of the main ways people share information,
+          create businesses, and build useful tools online. A web page may look simple in the browser,
+          but it is usually made from several parts working together. HTML gives the page structure,
+          CSS controls the presentation, and JavaScript can add interaction. Learning these pieces in
+          order helps a beginner understand how websites are built instead of only copying code. This
+          assignment is a good first step because it focuses on clean file organization, meaningful
+          content, readable formatting, and basic validation. Those habits matter because larger websites
+          become difficult to maintain when files are messy or code is not documented. Even a small page
+          should have a clear purpose, working links, headings, paragraphs, images, and styling that makes
+          the content easier to read. Good web pages are not only about decoration; they should also be
+          organized, understandable, and useful for the person visiting the site.
+        </p>
+
+        <figure>
+          <img src="images/web-sketch.svg" alt="A simple drawing showing HTML, CSS, and JavaScript building blocks forming a web page.">
+          <figcaption>HTML, CSS, and JavaScript each support a different part of a complete web page.</figcaption>
+        </figure>
+      </section>
+
+      <section id="tools" class="card">
+        <!-- This section uses a table to organize tools a beginner web developer may use. -->
+        <h2>Helpful Tools for a Beginner</h2>
+        <p>
+          A beginner does not need complicated software to start building websites. The most important
+          tools are a code editor, a browser, and a place to save and publish the project. The table below
+          lists a simple starter setup.
+        </p>
+
+        <table>
+          <caption>Starter web development tools</caption>
+          <thead>
+            <tr>
+              <th scope="col">Tool</th>
+              <th scope="col">Purpose</th>
+              <th scope="col">Beginner Benefit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Visual Studio Code</td>
+              <td>Writing and organizing code</td>
+              <td>Shows helpful hints, errors, and extensions</td>
+            </tr>
+            <tr>
+              <td>Google Chrome or Firefox</td>
+              <td>Testing the website in a browser</td>
+              <td>Includes developer tools for checking layout problems</td>
+            </tr>
+            <tr>
+              <td>GitHub</td>
+              <td>Saving project history and publishing with GitHub Pages</td>
+              <td>Makes the page available through a public web address</td>
+            </tr>
+            <tr>
+              <td>W3C Validators</td>
+              <td>Checking HTML and CSS for mistakes</td>
+              <td>Helps confirm that the code follows web standards</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="resources" class="card">
+        <!-- This section provides working links to useful web development resources. -->
+        <h2>Useful Resources to Browse</h2>
+        <p>
+          These links are useful for learning more about front-end development and for checking whether
+          this assignment follows basic web standards.
+        </p>
+
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener">MDN Web Docs: Learn Web Development</a></li>
+          <li><a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C HTML Markup Validation Service</a></li>
+          <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener">W3C CSS Validation Service</a></li>
+          <li><a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages Documentation</a></li>
+        </ul>
+      </section>
+
+      <section id="reflection" class="card">
+        <!-- This section demonstrates HTML entities and summarizes what the page shows. -->
+        <h2>Reflection</h2>
+        <p>
+          This page uses several common HTML elements, including headings, paragraphs, a table, links,
+          and an image. It also uses HTML entities such as &lt;h1&gt;, &lt;p&gt;, &amp;, and &copy; to show symbols
+          that may otherwise be interpreted as code. Keeping the CSS in a separate folder also makes the
+          project easier to update later. For example, changing the colors or spacing can be done in one
+          stylesheet instead of editing every section of the HTML file.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <!-- This footer includes validation and source-code links for grading review. -->
+      <p>&copy; 2026 Preston Wilson. Created for COMP 4610 GUI I HW1.</p>
+      <p id="last-updated">JavaScript is loading the page date.</p>
+      <p class="source-links">
+        Source files:
+        <a href="index.html">index.html</a> |
+        <a href="css/style.css">css/style.css</a> |
+        <a href="js/script.js">js/script.js</a> |
+        <a href="images/web-sketch.svg">web-sketch.svg</a>
+      </p>
+      <p>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank" rel="noopener">
+          <img class="validator-badge" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!">
+        </a>
+      </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
